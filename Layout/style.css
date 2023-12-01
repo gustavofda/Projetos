@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family= Montserrat :wght@300 & display=swap');
+
+*{
+   margin: auto;
+}
+body {
+	font-family: Arial, sans-serif;
+	background-color: white;
+  }
+
+ #especial {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 50px
+}
+
+ header a {
+	margin: 10px;
+	text-align: center;
+ }
+  
+  header {
+	background-color: white;
+	color: black;
+	padding: 10px;
+	text-align: center;
+  }
+
+  nav a {
+	color: black;
+	text-decoration: none;
+	font-family:'Montserrat', sans-serif;
+  }
+
+ article { 
+	text-decoration: none;
+	font-family:'Montserrat', sans-serif;
+  }
+  
+  .img-container {
+	text-align: left;
+  }
+
+ footer > a {
+	color: white;
+
+  }
+
+ footer {
+	background-color: black;
+	font-size: 13px;
+	color: white;
+	padding: 10px;
+	margin: 0px;
+	text-align: center;
+ }
