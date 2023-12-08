@@ -1,0 +1,60 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+h1 {
+    color: #333;
+    font: 30px 'Roboto', sans-serif; /* Reduzi o tamanho da fonte para dispositivos menores */
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    height: 30px; /* Ajustei a altura */
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(imagens/img001body.jpg);
+    overflow: hidden;
+}
+
+input {
+    width: 80%; /* Ajustei a largura para ser responsiva */
+    max-width: 300px; /* Adicionei uma largura máxima */
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+button {
+    width: 80%;
+    max-width: 300px;
+    margin-top: 10px; /* Adicionei um espaçamento entre os botões */
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #18ca6b;
+    color: #fff;
+    border-radius: 70px;
+    border: 2px solid #31d47d;
+    box-shadow: 8px 5px 5px rgba(0, 0, 0, 0.297);
+    cursor: pointer;
+}
+
+#bloco {
+    width: 80%; /* Ajustei a largura para ser responsiva */
+    max-width: 400px; /* Adicionei uma largura máxima */
+    height: auto; /* Adaptei a altura automaticamente */
+    background-color: #f0fff5;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
