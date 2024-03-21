@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fórmulario</title>
+    <link rel="stylesheet" href="../Assents/CSS/index.css">
+</head>
+<body>
+    <main>
+        <div class="form-container" id="form-container">
+            <form id="multi-step-form">
+                <div id="step1">
+                    <div class="info-step-1">
+                        <p class="p-1">Detalhes pessoais</p>
+                        <p class="p-2">Contato</p>
+                        <p class="p-3">Confimação</p>
+                    </div>
+
+                    <div class="input-box">
+                        <img src="../Assents/img/pessoa.png" alt="pessoa">    
+                        <input type="text" id="nome" placeholder="Digite seu nome aqui" required>
+                    </div>
+
+                    <div class="input-box">
+                        <img src="../Assents/img/comunicacao.png" alt="">
+                        <input type="email" id="email" placeholder="Digite seu email aqui" required>
+                    </div>
+                    <button type="button" class="next" onclick="nextStep()">Próximo</button>
+                </div>
+
+                <div id="step2" style="display: none;">
+                    <div class="info-step-2">
+                        <p class="p-1">Detalhes pessoais</p>
+                        <p class="p-2">Contato</p>
+                        <p class="p-3">Confimação</p>
+                    </div>
+
+                    <div class="input-box">
+                        <img src="../Assents/img/telefone.png" alt="">
+                        <input type="tel" id="telefone" placeholder="Digite seu telefone aqui" required>
+                    </div>
+
+                    <div class="input-box">
+                        <img src="../Assents/img/localizacao.png" alt="">
+                        <input type="text" id="endereco" placeholder="Digite seu endereço aqui" required>
+                    </div>
+                    
+                    <button type="button" class="back" onclick="prevStep()">Voltar</button>
+                    <button type="button" class="next" onclick="nextStep()">Próximo</button>
+                </div>
+
+                <div id="step3" style="display: none;">
+                    <div class="info-step-3">
+                        <p class="p-1">Detalhes pessoais</p>
+                        <p class="p-2">Contato</p>
+                        <p class="p-3">Confimação</p>
+                    </div>
+
+                    <div id="confirmation"></div>
+
+                    <button type="button" class="back" onclick="prevStep()">Voltar</button>
+                    <button type="submit" class="next" onclick="submitForm()">Enviar</button>
+                </div>
+            </form>
+          </div>
+
+          <div id="success-message" style="display: none; font: 'Franklin Gothic Medium'; color: white;">
+            <h1>Informações enviadas com sucesso.</h1>
+          </div>
+    </main>
+
+    <script src="../src/script/index.js"></script>
+</body>
+</html>
