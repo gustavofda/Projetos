@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/style.css">
+    <script src="../src/js/index.js"></script>
+    <title>LOGIN</title>
+</head>
+<body>
+    <div id="main-login">
+        <div id="left-login">
+         <h1>Faça Login <br>Para acessar sua conta</h1>
+         <img src="../src/developers.svg" class="left-login-img" alt="developers">
+        </div>
+        <div id="right-login">
+           <div id="card-login">
+               <h1>LOGIN</h1>   
+             <div class="textfild">
+               <label for="usuario">Usuário</label>
+               <input type="text" placeholder="Usuário" id="usuario" required>
+            </div>
+         <div class="textfild">
+               <label for="senha">Senha</label>
+               <input type="password" name="senha" id="senha" placeholder="Senha" required>
+              </div>
+               <button class="btn-login" onclick="Login()">Entrar</button>
+           </div>
+        </div>
+    </div>
+</body>
+</html>
